@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 
 class Purchase extends GetxController {
-  var products = <Product>[].obs();
+  var products = <Product>[].obs;
 
   @override
   void onInit() async {

@@ -4,8 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:week_9/model/product.dart';
 
 class DemoController extends GetxController {
-  RxList<Product> cartItems = <Product>[].obs;
-  RxInt test = 1.obs;
+  var cartItems = <Product>[].obs;
 
   int get cartCount => cartItems.length;
   double get totalAmount =>
@@ -18,8 +17,6 @@ class DemoController extends GetxController {
 
   void addToCart(Product product) {
     cartItems.add(product);
-    test++;
-    update();
   }
 
   void changeTheme(bool val) {
