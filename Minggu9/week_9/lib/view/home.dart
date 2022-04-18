@@ -46,13 +46,16 @@ class Home extends StatelessWidget {
                             color: Colors.red,
                           ),
                           child: Center(
-                              child: Obx(() => Text(
-                                    '${cart.cartCount}',
-                                    style: const TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 11.0),
-                                  ))),
+                            child: Obx(
+                              () => Text(
+                                '${cart.cartCount}',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 11.0),
+                              ),
+                            ),
+                          ),
                         ),
                       )
                     ],
